@@ -1,0 +1,14 @@
+---
+# MQTT IO Configuration file
+#
+# https://mqtt-io.app/2.2.6/#/config/scenarios
+#
+mqtt:
+  host: localhost
+  topic_prefix: home
+
+# GPIO
+gpio_modules:
+  # Use the Raspberry Pi built-in GPIO
+  - name: rpi
+    module: raspberrypi
