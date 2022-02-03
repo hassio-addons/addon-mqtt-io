@@ -11,7 +11,12 @@ comparison to installing any other Home Assistant add-on.
 
 1. Search for the "MQTT IO" add-on in the Supervisor add-on store and
    install it.
-1. Start the "MQTT IO" add-on
+1. Set the location of the MQTT IO configuration file in the add-on options.
+   By default, this will be `/config/mqtt-io/config.yml`.
+1. Create the MQTT IO configuration file. For information about the format
+   and configuration option, please consult the MQTT IO documentation:
+   <https://mqtt-io.app/2.2.6/#/config/scenarios>
+1. Start the "MQTT IO" add-on when the configuration is created.
 1. Check the logs of the "MQTT IO" add-on to see if everything went well.
 
 ## Configuration
@@ -21,10 +26,23 @@ comparison to installing any other Home Assistant add-on.
 Example add-on configuration:
 
 ```yaml
+configuration_file: /config/mqtt-io.yml
 log_level: info
 ```
 
 **Note**: _This is just an example, don't copy and past it! Create your own!_
+
+### Option: `configuration_file`
+
+The `configuration_file` option allows you to configure the configuration
+file MQTT IO will use to run. The default is `/config/mqtt-io/config.yml`,
+but you change it to something else if you want.
+
+For more information about the MQTT IO configuration file format, see:
+
+<https://mqtt-io.app/2.2.6/#/config/scenarios>
+
+Please note that this configuration file is not created automatically.
 
 ### Option: `log_level`
 
