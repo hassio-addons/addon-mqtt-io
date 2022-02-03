@@ -22,5 +22,7 @@ map:
   - config:rw
   - share:rw
   - ssl
+config:
+  configuration_file: /config/mqtt-io/config.yml
 schema:
   log_level: list(trace|debug|info|notice|warning|error|fatal)?
