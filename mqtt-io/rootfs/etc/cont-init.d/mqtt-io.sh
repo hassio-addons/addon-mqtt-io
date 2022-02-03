@@ -3,8 +3,6 @@
 # Home Assistant Community Add-on: MQTT IO
 # Configures MQTT IO
 # ==============================================================================
-declare arch
-
 # Creates initial MQTT IO configuration in case it is non-existing
 if ! bashio::fs.directory_exists '/config/mqtt-io'; then
     cp -R /root/mqtt-io /config/mqtt-io \
