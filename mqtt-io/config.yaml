@@ -22,7 +22,7 @@ map:
   - config:rw
   - share:rw
   - ssl
-config:
+options:
   configuration_file: /config/mqtt-io/config.yml
 schema:
   configuration_file: str
