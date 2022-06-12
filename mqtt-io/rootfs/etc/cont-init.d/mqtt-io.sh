@@ -1,24 +1,24 @@
 #!/command/with-contenv bashio
 # ==============================================================================
 # Home Assistant Community Add-on: MQTT IO
-# Configures MQTT IO
+# Pre-run checks for MQTT IO
 # ==============================================================================
 # Creates initial MQTT IO configuration in case it is non-existing
-if ! bashio::fs.directory_exists '/config/mqtt-io'; then
-    cp -R /root/mqtt-io /config/mqtt-io \
-        || bashio::exit.nok 'Failed to create initial MQTT IO configuration'
-fi
+declare configuration_file
 
-# Raise warning if the directory exists, but the mqtt-io config is missing.
-if ! bashio::fs.file_exists '/config/mqtt-io/config.yml'; then
+configuration_file=$(bashio::config 'configuration_file')
+if ! bashio::fs.file_exists "${configuration_file}"; then
     bashio::log.fatal
-    bashio::log.fatal "Seems like the /config/mqtt-io folder exists,"
-    bashio::log.fatal "however config.yml wasn't found."
+    bashio::log.fatal "Seems like the configured configuration file does"
+    bashio::log.fatal "not exists:"
     bashio::log.fatal
-    bashio::log.fatal "Remove or rename the /config/mqtt-io folder"
-    bashio::log.fatal "and the add-on will create a new and fresh one"
-    bashio::log.fatal "for you."
+    bashio::log.fatal "${configuration_file}"
     bashio::log.fatal
-
+    bashio::log.fatal "Please check the add-on configuration, or create the"
+    bashio::log.fatal "configuration file. More information about the"
+    bashio::log.fatal "configuration file format see:"
+    bashio::log.fatal
+    bashio::log.fatal "https://mqtt-io.app"
+    bashio::log.fatal
     bashio::exit.nok
 fi

@@ -4,4 +4,4 @@
 # Runs MQTT IO
 # ==============================================================================
 bashio::log.info "Starting MQTT IO..."
-exec python3 -m mqtt_io /config/mqtt-io/config.yml
+exec python3 -m mqtt_io "$(bashio::config 'configuration_file')"
