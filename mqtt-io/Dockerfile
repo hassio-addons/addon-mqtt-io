@@ -10,7 +10,7 @@ COPY requirements.txt /tmp/
 
 # Setup base
 ARG BUILD_ARCH=amd64
-# hadolint ignore=DL3003
+# hadolint ignore=DL3003,DL3042
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
@@ -26,7 +26,7 @@ RUN \
     \
     && pip install -r /tmp/requirements.txt \
     \
-    && find /usr/local \
+    && find /usr \
         \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
         -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
         -exec rm -rf '{}' + \
