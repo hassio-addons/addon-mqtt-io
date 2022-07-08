@@ -19,7 +19,7 @@ privileged:
   - SYS_RAWIO
 devices:
   - /dev/mem
-  - /dev/gpiomem  
+  - /dev/gpiomem
 map:
   - config:rw
   - share:rw
