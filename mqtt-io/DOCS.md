@@ -40,7 +40,7 @@ but you change it to something else if you want.
 
 For more information about the MQTT IO configuration file format, see:
 
-<https://mqtt-io.app/2.2.6/#/config/scenarios>
+<https://mqtt-io.app/2.2.7/#/config/scenarios> and <https://mqtt-io.app/2.2.7/#/config/ha_discovery>
 
 Please note that this configuration file is not created automatically.
 
