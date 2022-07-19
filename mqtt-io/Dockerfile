@@ -1,4 +1,4 @@
-ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.0
+ARG BUILD_FROM=ghcr.io/hassio-addons/base:12.2.1
 # hadolint ignore=DL3006
 FROM ${BUILD_FROM}
 
@@ -9,7 +9,6 @@ SHELL ["/bin/bash", "-o", "pipefail", "-c"]
 COPY requirements.txt /tmp/
 
 # Setup base
-ARG BUILD_ARCH=amd64
 # hadolint ignore=DL3003,DL3042
 RUN \
     apk add --no-cache --virtual .build-dependencies \
