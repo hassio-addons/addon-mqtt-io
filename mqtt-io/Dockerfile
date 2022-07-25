@@ -24,6 +24,7 @@ RUN \
         python3=3.10.4-r0 \
     \
     && pip install -r /tmp/requirements.txt \
+    && pip install Adafruit_DHT==1.4.0 --install-option="--force-pi" \
     \
     && find /usr \
         \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
