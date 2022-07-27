@@ -15,13 +15,13 @@ RUN \
         build-base=0.5-r3 \
         libffi-dev=3.4.2-r1 \
         py3-wheel=0.37.1-r0 \
-        python3-dev=3.10.4-r0 \
+        python3-dev=3.10.5-r0 \
     \
     && apk add --no-cache \
         py3-bcrypt=3.2.2-r0 \
         py3-cryptography=3.4.8-r1 \
         py3-pip=22.1.1-r0 \
-        python3=3.10.4-r0 \
+        python3=3.10.5-r0 \
     \
     && pip install -r /tmp/requirements.txt \
     && pip install Adafruit_DHT==1.4.0 --install-option="--force-pi2" \
