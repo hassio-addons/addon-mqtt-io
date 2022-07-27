@@ -12,24 +12,24 @@ COPY requirements.txt /tmp/
 # hadolint ignore=DL3003,DL3042
 RUN \
     apk add --no-cache --virtual .build-dependencies \
-    build-base=0.5-r3 \
-    libffi-dev=3.4.2-r1 \
-    py3-wheel=0.37.1-r0 \
-    python3-dev=3.10.5-r0 \
+        build-base=0.5-r3 \
+        libffi-dev=3.4.2-r1 \
+        py3-wheel=0.37.1-r0 \
+        python3-dev=3.10.5-r0 \
     \
     && apk add --no-cache \
-    py3-bcrypt=3.2.2-r0 \
-    py3-cryptography=3.4.8-r1 \
-    py3-pip=22.1.1-r0 \
-    python3=3.10.5-r0 \
+        py3-bcrypt=3.2.2-r0 \
+        py3-cryptography=3.4.8-r1 \
+        py3-pip=22.1.1-r0 \
+        python3=3.10.5-r0 \
     \
     && pip install -r /tmp/requirements.txt \
     && pip install Adafruit_DHT==1.4.0 --install-option="--force-pi2" \
     \
     && find /usr \
-    \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
-    -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
-    -exec rm -rf '{}' + \
+        \( -type d -a -name test -o -name tests -o -name '__pycache__' \) \
+        -o \( -type f -a -name '*.pyc' -o -name '*.pyo' \) \
+        -exec rm -rf '{}' + \
     \
     && apk del --no-cache --purge .build-dependencies
 
