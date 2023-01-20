@@ -1,7 +1,0 @@
-#!/command/with-contenv bashio
-# ==============================================================================
-# Home Assistant Community Add-on: MQTT IO
-# Runs MQTT IO
-# ==============================================================================
-bashio::log.info "Starting MQTT IO..."
-exec python3 -m mqtt_io "$(bashio::config 'configuration_file')"

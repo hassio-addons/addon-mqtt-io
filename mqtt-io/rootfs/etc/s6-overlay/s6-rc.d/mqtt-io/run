@@ -1,9 +1,9 @@
 #!/command/with-contenv bashio
+# shellcheck shell=bash
 # ==============================================================================
 # Home Assistant Community Add-on: MQTT IO
-# Pre-run checks for MQTT IO
+# Runs MQTT IO
 # ==============================================================================
-# Creates initial MQTT IO configuration in case it is non-existing
 declare configuration_file
 
 configuration_file=$(bashio::config 'configuration_file')
@@ -22,3 +22,6 @@ if ! bashio::fs.file_exists "${configuration_file}"; then
     bashio::log.fatal
     bashio::exit.nok
 fi
+
+bashio::log.info "Starting MQTT IO..."
+exec python3 -m mqtt_io "$(bashio::config 'configuration_file')"
