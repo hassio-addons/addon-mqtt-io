@@ -13,17 +13,14 @@ arch:
   - i386
 init: false
 homeassistant_api: true
-uart: true
-gpio: true
 privileged:
   - SYS_RAWIO
-devices:
-  - /dev/mem
-  - /dev/gpiomem
 map:
   - config:rw
   - share:rw
   - ssl
+devices:
+  - /dev
 options:
   configuration_file: /config/mqtt-io/config.yml
 schema:
