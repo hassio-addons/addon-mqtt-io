@@ -13,6 +13,8 @@ arch:
   - i386
 init: false
 homeassistant_api: true
+uart: true
+gpio: true
 privileged:
   - SYS_RAWIO
 map:
