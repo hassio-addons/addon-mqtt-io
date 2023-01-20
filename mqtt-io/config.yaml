@@ -13,13 +13,14 @@ arch:
   - i386
 init: false
 homeassistant_api: true
-full_access: true
 privileged:
   - SYS_RAWIO
 map:
   - config:rw
   - share:rw
   - ssl
+devices:
+  - /dev
 options:
   configuration_file: /config/mqtt-io/config.yml
 schema:
