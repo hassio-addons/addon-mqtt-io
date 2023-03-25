@@ -32,6 +32,12 @@
       "automerge": true
     },
     {
+      "groupName": "Python",
+      "matchDatasources": ["repology"],
+      "matchDepPatterns": ["^alpine.*/python.*"],
+      "automerge": true
+    },
+    {
       "groupName": "Add-on base image",
       "matchDatasources": ["docker"]
     },
