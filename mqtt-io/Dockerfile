@@ -19,7 +19,7 @@ RUN \
     \
     && apk add --no-cache \
         py3-bcrypt=4.0.1-r0 \
-        py3-cryptography=38.0.3-r0 \
+        py3-cryptography=38.0.3-r1 \
         py3-pip=22.3.1-r1 \
         python3=3.10.9-r1 \
     \
