@@ -15,7 +15,7 @@ RUN \
         build-base=0.5-r3 \
         libffi-dev=3.4.4-r0 \
         py3-wheel=0.38.4-r0 \
-        python3-dev=3.10.9-r1 \
+        python3-dev=3.10.10-r0 \
     \
     && apk add --no-cache \
         py3-bcrypt=4.0.1-r0 \
