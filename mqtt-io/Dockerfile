@@ -21,7 +21,7 @@ RUN \
         py3-bcrypt=4.0.1-r0 \
         py3-cryptography=38.0.3-r0 \
         py3-pip=22.3.1-r1 \
-        python3=3.10.9-r1 \
+        python3=3.10.10-r0 \
     \
     && pip install -r /tmp/requirements.txt \
     && pip install Adafruit_DHT==1.4.0 --install-option="--force-pi2" \
