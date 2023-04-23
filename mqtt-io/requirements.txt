@@ -3,7 +3,7 @@ adafruit-circuitpython-ahtx0==1.0.17
 adafruit-circuitpython-mcp230xx==2.5.9
 Adafruit-MCP3008==1.0.2
 bme680==1.1.1
-gpiod==1.5.3
+gpiod==1.5.4
 gpiozero==1.6.2
 mqtt-io==2.2.8
 nfcpy==1.0.4
