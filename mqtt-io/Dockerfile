@@ -23,6 +23,7 @@ RUN \
         py3-pip=23.1.2-r0 \
         python3=3.11.3-r11 \
     \
+    && pip install --upgrade pip==23.0.1 \
     && pip install -r /tmp/requirements.txt \
     && pip install Adafruit_DHT==1.4.0 --install-option="--force-pi2" \
     \
