@@ -13,7 +13,7 @@ COPY requirements.txt /tmp/
 RUN \
     apk add --no-cache --virtual .build-dependencies \
         build-base=0.5-r3 \
-        git=2.38.5-r0 \
+        git=2.40.1-r0 \
         libffi-dev=3.4.4-r2 \
         py3-wheel=0.40.0-r1 \
         python3-dev=3.11.6-r0 \
