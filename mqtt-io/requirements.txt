@@ -16,4 +16,4 @@ pyserial==3.5
 RPi.bme280==0.2.4
 RPi.GPIO==0.7.1
 smbus2==0.4.2
-w1thermsensor==2.0.0
+w1thermsensor==2.3.0
