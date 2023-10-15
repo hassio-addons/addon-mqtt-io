@@ -20,8 +20,6 @@ map:
   - config:rw
   - share:rw
   - ssl
-devices:
-  - /dev
 options:
   configuration_file: /config/mqtt-io/config.yml
 schema:
