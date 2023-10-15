@@ -1,4 +1,4 @@
-adafruit-circuitpython-ads1x15==2.2.19
+adafruit-circuitpython-ads1x15==2.2.23
 adafruit-circuitpython-ahtx0==1.0.19
 adafruit-circuitpython-mcp230xx==2.5.12
 Adafruit-MCP3008==1.0.2
