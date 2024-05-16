@@ -16,13 +16,13 @@ RUN \
         git=2.43.4-r0 \
         libffi-dev=3.4.4-r3 \
         py3-wheel=0.42.0-r0 \
-        python3-dev=3.11.8-r0 \
+        python3-dev=3.11.9-r0 \
     \
     && apk add --no-cache \
         py3-bcrypt=4.1.1-r0 \
         py3-cryptography=41.0.7-r0 \
         py3-pip=23.3.1-r0 \
-        python3=3.11.8-r0 \
+        python3=3.11.9-r0 \
     \
     && pip install --upgrade pip==23.0.1 \
     && pip install -r /tmp/requirements.txt \
