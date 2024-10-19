@@ -16,5 +16,5 @@ pifacedigitalio==3.0.5
 pyserial==3.5
 RPi.bme280==0.2.4
 RPi.GPIO==0.7.1
-smbus2==0.4.3
+smbus2==0.5.0
 w1thermsensor==2.3.0
