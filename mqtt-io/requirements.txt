@@ -3,7 +3,7 @@ adafruit-circuitpython-ahtx0==1.0.23
 adafruit-circuitpython-mcp230xx==2.5.15
 Adafruit-MCP3008==1.0.2
 bme680==1.1.1
-gpiod==2.2.1
+gpiod==2.2.2
 gpiozero==2.0.1
 mqtt-io @ git+https://github.com/flyte/mqtt-io@2bb2f945ea47ed87f99ab4fc966d2dbbd47fc7c7
 paho-mqtt==1.6.1
