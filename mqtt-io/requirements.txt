@@ -5,7 +5,7 @@ Adafruit-MCP3008==1.0.2
 bme680==1.1.1
 gpiod==2.2.3
 gpiozero==2.0.1
-mqtt-io =2.6.0
+mqtt-io==2.6.0
 paho-mqtt==1.6.1
 nfcpy==1.0.4
 pcf8574==0.1.3
